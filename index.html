@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Home | Welcome</title>
+  <meta name="theme-color" content="#195c65">
+  <link href="./joke-app/library/bootstrap-4.min.css" type="text/css" rel="stylesheet">
+  <link href="./joke-app/library/font-awesome-4.7.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+    body{
+      background: linear-gradient(90deg,#288c8c,#195c65)
+    }
+    .nav .nav-item .nav-link, .navbar-brand{
+      color: whitesmoke;
+      font-family: "philosopher", serif;
+    }
+    .nav .nav-item .nav-link:hover{
+      color: #aaa;
+    }
+    #signUp{
+      border: 1px solid teal;
+      padding: 8px 18px;
+      background: #3cd6d6;
+    }
+    header{
+      margin-top: 200px;
+    }
+    #span{
+      display: flex;
+    }
+    hr{
+      width: 35%;
+      border: 1px solid gold;
+    }
+
+    .shadow{
+      padding: 20px;
+      transition: all .4s;
+    }
+    .shadow:hover{
+      box-shadow: 1px 2px 2px #333;
+      padding: 20px;
+      transition: all .2s;
+    }
+    .shadow i{
+      margin-bottom: 15px;
+      color: white;
+      font-size: 40px;
+    }
+
+    footer{
+      margin-top: 10em;
+    }
+  footer div a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    margin-right: 15px;
+
+
+  }
+  footer div a:hover{
+    color: aliceblue;
+  }
+  .navbar-toggler{
+    color: red;
+  }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-transparent text-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="index.html" class="navbar-brand">A|D</a>
+      <button class="navbar-toggler btn btn-primary" data-toggle="collapse" data-target="#navbar"></button>
+      <span class="navbar-toggler-icon"></span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link nav-link-hover">
+            HOME
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link nav-link-hover">
+            ABOUT
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link nav-link-hover">
+            HIRE A DEV
+          </a>
+        </li>
+        <li class="nav-item ml-2">
+          <a href="signUp.html" class="nav-link nav-link-hover rounded" id='signUp'>
+            SIGN UP
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="signIn.html" class="nav-link nav-link-hover">
+            SIGN IN
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header >
+  <div class="text-white text-center container">
+      <span id="span"><hr>
+    <h6 class="d-inline pl-4 pr-4">WHAT WE DO</h6>
+    <hr></span>
+    <div class="row mt-5">
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="shadow text-light">
+          <i class="fa fa-coffee"></i>
+          <p> Drink Coffee</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="shadow text-light">
+          <i class="fa fa-code"></i>
+          <p>Code</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-3">
+        <div class="shadow text-light">
+          <i class="fa fa-users"></i>
+          <p> Collaborate On Software</p>
+        </div>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 ">
+        <div class="shadow text-light">
+          <i class="fa fa-copy"></i>
+          <p> Publish</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<footer class='bg-dark mb-5 '>
+  <div class="container-fluid text-light text-right">
+  <a href="facebook.com">
+    <i class="fa fa-facebook-square"></i>
+  </a>
+  <a href="twitter.com">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  <a href="instagram.com">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a href="google.com">
+    <i class="fa fa-google-plus-circle"></i>
+  </a>
+</div>
+</footer>
+
+  <script type="text/javascript" src="./joke-app/library/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./joke-app/library/bootstrap-4.min.js"></script>
+  <script type="text/javascript" src="./joke-app/library/popper.min.js"></script>
+  <script>
+    if(window.innerWidth >576){
+        document.querySelector("footer").classList = "fixed-bottom";
+    }else{
+      document.querySelector("footer").classList = "";
+    }
+  </script>
+</body>
+</html>
